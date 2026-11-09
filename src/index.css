@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-forest: #183D35;
+    --brand-primary: #286B57;
+    --brand-sage: #DCE9DE;
+    --brand-sage-light: #EEF5F0;
+    --brand-ivory: #F7F5EF;
+    --brand-surface: #FFFFFF;
+    --brand-charcoal: #202824;
+    --brand-muted: #68736D;
+    --brand-border: #E3E7E0;
+    --brand-lime: #D8F36A;
+    --brand-lime-hover: #C9E653;
+    --brand-error: #DC2626;
+  }
+
+  .dark {
+    --brand-forest: #0B1714;
+    --brand-primary: #34806A;
+    --brand-sage: #1F362F;
+    --brand-sage-light: #162B25;
+    --brand-ivory: #0E1A17;
+    --brand-surface: #142420;
+    --brand-charcoal: #F5F7F2;
+    --brand-muted: #8E9E96;
+    --brand-border: #233D35;
+    --brand-lime: #D8F36A;
+    --brand-lime-hover: #C9E653;
+    --brand-error: #EF4444;
+  }
+}
+
+/* Custom scrollbars for clean navigation panels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-muted);
+}
