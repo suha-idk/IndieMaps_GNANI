@@ -2,9 +2,11 @@
 
 ### Say it naturally. Navigate intelligently.
 
-**Indie Maps** is a multilingual, voice-first conversational navigation assistant designed for the diversity of how people communicate across India. It enables users to plan and modify journeys through natural speech — including regional languages, Hinglish, and code-mixed commands — instead of relying on rigid search fields and manual route editing.
+[**Indie Maps**](https://github.com/suha-idk/IndieMaps_GNANi) is a multilingual, voice-first conversational navigation assistant designed for the diversity of how people communicate across India. It enables users to plan and modify journeys through natural speech, including regional languages, Hinglish, and code-mixed commands, instead of relying on rigid search fields and manual route editing. **[Read the Short Solution Pitch](https://drive.google.com/file/d/1cbNHGMq8Ldt8_q7I28y-JPGX9r2_XQ8m/view?usp=sharing) (Drive link attached).**
 
-From understanding an ambiguous landmark-based request to managing multiple destinations and stops in a single conversation, Indie Maps turns everyday language into structured navigation actions and real-world routes.
+From understanding ambiguous landmark-based requests to managing multiple destinations and stops in a single conversation, Indie Maps turns everyday language into structured navigation actions and real-world routes.
+
+Developed By: [https://github.com/Avni23314](https://github.com/Avni23314) and [https://github.com/Suhani1111](https://github.com/Suhani1111)
 
 ---
 
@@ -111,7 +113,7 @@ The application supports driving and two-wheeler travel modes in its journey mod
 
 ## How it works
 
-Indie Maps connects speech technology, language understanding, navigation logic, and mapping services in one workflow.
+Indie Maps connects speech technology, language understanding, navigation logic, and mapping services in one coordinated workflow.
 
 ```mermaid
 flowchart TD
@@ -130,17 +132,17 @@ flowchart TD
     L --> M["Spoken response"]
 ```
 
-**Step 1 — Speech input:** The user gives a voice command through the application.
+**Step 1: Speech input:** The user gives a voice command through the application.
 
-**Step 2 — Speech recognition:** Gnani AI's speech integration converts the audio input into text. A browser speech-recognition fallback is also available in the speech service.
+**Step 2: Speech recognition:** Gnani AI's speech integration converts the audio input into text. A browser speech-recognition fallback is also available in the speech service.
 
-**Step 3 — Command interpretation:** The backend uses Gemini to interpret the command, extract relevant place names, identify intent, and produce structured navigation actions. A local rule-based parser provides a fallback for supported command patterns.
+**Step 3: Command interpretation:** The backend uses Gemini to interpret the command, extract relevant place names, identify intent, and produce structured navigation actions. A local rule-based parser provides a fallback for supported command patterns.
 
-**Step 4 — Navigation transaction:** The journey transaction engine applies the interpreted actions while preserving existing journey state and handling ambiguity or clarification where required.
+**Step 4: Navigation transaction:** The journey transaction engine applies the interpreted actions while preserving existing journey state and handling ambiguity or clarification where required.
 
-**Step 5 — Place resolution and routing:** Google Places API resolves locations and discovers nearby businesses. Google Routes API v2 calculates the route using the selected origin, destination, and intermediate stops.
+**Step 5: Place resolution and routing:** Google Places API resolves locations and discovers nearby businesses. Google Routes API v2 calculates the route using the selected origin, destination, and intermediate stops.
 
-**Step 6 — Voice response:** Gnani AI's text-to-speech integration generates a spoken response to the user.
+**Step 6: Voice response:** Gnani AI's text-to-speech integration generates a spoken response to the user.
 
 ---
 
@@ -266,11 +268,9 @@ indie-maps/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/indie-maps.git
-cd indie-maps
+git clone https://github.com/suha-idk/IndieMaps_GNANi.git
+cd IndieMaps_GNANi
 ```
-
-Replace `YOUR-USERNAME` with the GitHub account or organization hosting the repository.
 
 ### 2. Install dependencies
 
@@ -415,16 +415,15 @@ Potential areas for further development include:
 ## Acknowledgements
 
 Indie Maps integrates services and technologies from:
-
-- **Gnani AI / Vachana** — multilingual speech recognition and speech synthesis.
-- **Google Gemini** — natural-language command interpretation.
-- **Google Maps Platform** — place discovery, mapping, and route calculation.
-- **React, TypeScript, Vite, and Express** — application and backend infrastructure.
+- **Gnani AI / Vachana:** multilingual speech recognition and speech synthesis.
+- **Google Gemini:** natural-language command interpretation.
+- **Google Maps Platform:** place discovery, mapping, and route calculation.
+- **React, TypeScript, Vite, and Express:** application and backend infrastructure.
 
 ---
 
 ## Project
 
-**Indie Maps — Say it naturally. Navigate intelligently.**
+**Indie Maps: Say it naturally. Navigate intelligently.**
 
 Built to make conversational navigation more accessible, intuitive, and useful across India's linguistic diversity.
